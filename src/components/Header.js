@@ -1,7 +1,13 @@
 import React from "react";
+import Menu from "./MenuComponent/Menu";
 
 const Header = () => {
-  return <div>Check Header edited by anjit</div>;
+  return (
+    <header className="header">
+      <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+      <Menu />
+    </header>
+  );
 };
 
 export default Header;
