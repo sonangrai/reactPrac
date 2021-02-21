@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import CardsRow from "./CardsRow";
 import TransCard from "./TransCard";
 
 const Home = () => {
@@ -8,7 +9,9 @@ const Home = () => {
         <div className="left__part">
           <TransCard />
         </div>
-        <div className="right__part">Slider Here</div>
+        <div className="right__part">
+          <CardsRow />
+        </div>
       </div>
     </Fragment>
   );
