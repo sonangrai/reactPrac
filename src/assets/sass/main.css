@@ -115,6 +115,7 @@
   padding: 1em;
   color: #fff;
   position: relative;
+  overflow: hidden;
 }
 
 .parent__box .right__part .cards__row .card .item iframe {
@@ -130,6 +131,29 @@
 }
 
 .parent__box .right__part .cards__row .card .upper i {
+  color: #f0c141;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.parent__box .right__part .cards__row .card .card__overlay {
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  overflow: hidden;
+  position: absolute;
+  background-color: #2e4085;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  left: 0;
+  padding: 0 1em;
+}
+
+.parent__box .right__part .cards__row .card .card__overlay .closur {
+  text-align: center;
+}
+
+.parent__box .right__part .cards__row .card .card__overlay .closur i {
   color: #f0c141;
   font-size: 1em;
   cursor: pointer;

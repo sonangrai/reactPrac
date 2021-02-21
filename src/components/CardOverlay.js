@@ -1,9 +1,29 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 
-const CardOverlay = () => {
+const CardOverlay = ({ height }) => {
+  console.log(height);
+  const [ht, setht] = useState(height);
+  const showOff = () => {
+    if (ht === "0") {
+      setht("100%");
+    } else {
+      setht("0");
+    }
+  };
+
+  useEffect(() => {
+    setht(height);
+  }, [height]);
+
   return (
     <Fragment>
-      <div className="card__overlay ">
+      <div className="card__overlay" style={{ height: `${ht}` }}>
+        <div className="closur">
+          <i
+            className="bi bi-chevron-compact-down"
+            onClick={(e) => showOff()}
+          ></i>
+        </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
