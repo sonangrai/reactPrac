@@ -13,7 +13,6 @@ const CardsRow = () => {
           </h3>
           <div className="item">
             <h2>The vanishing boys</h2>
-            <iframe src="https://www.youtube.com/embed/yqOHp8h-Emw"></iframe>
             <p>
               Duis aute irure dolor in reprehenderit in voluptate velit esse
               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
