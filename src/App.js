@@ -1,4 +1,4 @@
-import "./assets/sass/main.css";
+import "./assets/sass/main.scss";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import "bootstrap-icons/font/bootstrap-icons.css";
