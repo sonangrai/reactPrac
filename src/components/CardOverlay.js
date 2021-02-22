@@ -17,15 +17,56 @@ const CardOverlay = () => {
         <div className="closur">
           <i className={`bi bi-chevron-compact-${dir}`}></i>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <div className="playlist__row">
+          <div className="playlist__item active">
+            <div className="lf">
+              <img
+                src="https://img.youtube.com/vi/ow3fhDtRHiU/sddefault.jpg"
+                alt=""
+              />
+            </div>
+            <div className="rf">
+              <h3>Mortal Kombat</h3>
+              <p>Lorem Ipsum Siod Idos</p>
+            </div>
+          </div>
+          <div className="playlist__item">
+            <div className="lf">
+              <img
+                src="https://img.youtube.com/vi/ow3fhDtRHiU/sddefault.jpg"
+                alt=""
+              />
+            </div>
+            <div className="rf">
+              <h3>Mortal Kombat</h3>
+              <p>Lorem Ipsum Siod Idos</p>
+            </div>
+          </div>
+          <div className="playlist__item">
+            <div className="lf">
+              <img
+                src="https://img.youtube.com/vi/ow3fhDtRHiU/sddefault.jpg"
+                alt=""
+              />
+            </div>
+            <div className="rf">
+              <h3>Mortal Kombat</h3>
+              <p>Lorem Ipsum Siod Idos</p>
+            </div>
+          </div>
+          <div className="playlist__item">
+            <div className="lf">
+              <img
+                src="https://img.youtube.com/vi/ow3fhDtRHiU/sddefault.jpg"
+                alt=""
+              />
+            </div>
+            <div className="rf">
+              <h3>Mortal Kombat</h3>
+              <p>Lorem Ipsum Siod Idos</p>
+            </div>
+          </div>
+        </div>
       </div>
     </Fragment>
   );
