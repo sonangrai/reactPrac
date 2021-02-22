@@ -136,11 +136,18 @@
   cursor: pointer;
 }
 
+.parent__box .right__part .cards__row .card .upper i.active + .card__overlay {
+  height: 100%;
+}
+
+.parent__box .right__part .cards__row .card .card__overlay.active {
+  height: 95%;
+}
+
 .parent__box .right__part .cards__row .card .card__overlay {
   width: 100%;
   height: 0;
-  bottom: 0;
-  overflow: hidden;
+  bottom: 5%;
   position: absolute;
   background-color: #2e4085;
   -webkit-transition: 0.3s;

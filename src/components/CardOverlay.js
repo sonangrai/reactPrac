@@ -1,28 +1,21 @@
-import React, { Fragment, useState, useEffect } from "react";
+import React, { Fragment, useState } from "react";
 
-const CardOverlay = ({ height }) => {
-  console.log(height);
-  const [ht, setht] = useState(height);
-  const showOff = () => {
-    if (ht === "0") {
-      setht("100%");
+const CardOverlay = () => {
+  const [dir, setdir] = useState("up");
+  const showOff = (e) => {
+    e.currentTarget.classList.toggle("active");
+    if (dir === "up") {
+      setdir("down");
     } else {
-      setht("0");
+      setdir("up");
     }
   };
 
-  useEffect(() => {
-    setht(height);
-  }, [height]);
-
   return (
     <Fragment>
-      <div className="card__overlay" style={{ height: `${ht}` }}>
+      <div className="card__overlay" onClick={(e) => showOff(e)}>
         <div className="closur">
-          <i
-            className="bi bi-chevron-compact-down"
-            onClick={(e) => showOff()}
-          ></i>
+          <i className={`bi bi-chevron-compact-${dir}`}></i>
         </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
