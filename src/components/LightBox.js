@@ -1,6 +1,9 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 
 const LightBox = ({ match, history }) => {
+  const loc = useLocation();
+  console.log(loc);
   return (
     <>
       <div className="lightbox__container">
