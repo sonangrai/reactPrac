@@ -6,11 +6,13 @@ const Back = () => {
   let history = useHistory();
 
   function handleClick() {
-    history.push("/home");
+    history
+    .goBack();
   }
+
   return (
-    <button onClick={handleClick}>
-      <i class="bi bi-chevron-left"></i>
+    <button onClick={handleClick} className="backButton">
+      <i className="bi bi-chevron-left"></i>
     </button>
   );
 };

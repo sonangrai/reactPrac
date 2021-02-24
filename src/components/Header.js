@@ -1,12 +1,13 @@
 import React from "react";
 
-import "../assets/sass/Anjit/Header.scss";
 
 import Menu from "./MenuComponent/Menu";
+import Back from "./MenuComponent/Back.jsx";
 
 const Header = () => {
   return (
     <header>
+      <Back />
       <Menu />
     </header>
   );
