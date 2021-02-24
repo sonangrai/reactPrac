@@ -1,15 +1,12 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
 
 const LightBox = ({ match, history }) => {
-  const loc = useLocation();
-  console.log(loc);
   return (
     <>
       <div className="lightbox__container">
         <div className="top__bar">
           <i
-            class="bi bi-x"
+            className="bi bi-x"
             onClick={() => {
               history.goBack();
             }}
