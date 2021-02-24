@@ -1,0 +1,39 @@
+@mixin transition($in) {
+  @if $in == in {
+    ransition: 0.3s ease-in;
+  } @else if $in == out {
+    transition: 0.3s ease-out;
+  } @else {
+    transition: 0.3s linear;
+  }
+}
+
+@mixin button($state) {
+  background-color: $primary-color;
+  border: none;
+  padding: 16px 28px;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: capitalize;
+  line-height: 17px;
+  position: relative;
+  white-space: nowrap;
+  font-weight: 600;
+  @include transition(normal);
+  cursor: pointer;
+
+  @if $state == white {
+    background-color: #fff;
+    color: $primary-color;
+  }
+
+  &:hover {
+  }
+
+  &:active {
+    transform: translateY(0px);
+    box-shadow: none !important;
+    outline: none;
+  }
+}

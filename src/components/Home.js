@@ -1,6 +1,8 @@
 import React, { Fragment } from "react";
 import CardsRow from "./CardsRow";
 import TransCard from "./TransCard";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import LightBox from "./LightBox";
 
 const Home = () => {
   return (
@@ -13,6 +15,11 @@ const Home = () => {
           <CardsRow />
         </div>
       </div>
+      <Router>
+        <Switch>
+          <Route path="/lbox/:vid" component={LightBox} />
+        </Switch>
+      </Router>
     </Fragment>
   );
 };

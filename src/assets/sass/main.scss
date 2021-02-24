@@ -1,7 +1,11 @@
 @import "./varaibles";
-@import "./common/classes";
+@import "./borderRadius";
 @import "./mixins";
+@import "./common/classes";
 @import "./pages/index";
+@import "./common/commonMixin";
+@import "./Anjit/header";
+
 @font-face {
   font-family: "OpenSans";
   src: url(../../fonts/OpenSans-Regular.ttf) format("TrueType");
