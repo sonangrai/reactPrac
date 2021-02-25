@@ -1,8 +1,9 @@
 import React, { Fragment } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import CardOverlay from "./CardOverlay";
 
 const CardsRow = () => {
+  let location = useLocation();
   return (
     <Fragment>
       <div className="cards__row">
@@ -20,7 +21,7 @@ const CardsRow = () => {
                 src="https://img.youtube.com/vi/VqFn3FvVjk4/sddefault.jpg"
                 alt=""
               />
-              <Link to="/lbox/VqFn3FvVjk4">
+              <Link to={{pathname: `/lbox/VqFn3FvVjk4`, state: { background: location }}}>
                 <span
                   className="bi bi-play-circle"
                   data-value="VqFn3FvVjk4"
@@ -50,7 +51,7 @@ const CardsRow = () => {
                 src="https://img.youtube.com/vi/ow3fhDtRHiU/sddefault.jpg"
                 alt=""
               />
-              <Link to="/lbox/ow3fhDtRHiU">
+              <Link to={{pathname: `/lbox/ow3fhDtRHiU`, state: { background: location }}}>
                 <span
                   className="bi bi-play-circle"
                   data-value="ow3fhDtRHiU"
@@ -80,7 +81,7 @@ const CardsRow = () => {
                 src="https://img.youtube.com/vi/zAGVQLHvwOY/sddefault.jpg"
                 alt=""
               />
-              <Link to="/lbox/zAGVQLHvwOY">
+              <Link to={{pathname: `/lbox/zAGVQLHvwOY`, state: { background: location }}}>
                 <span
                   className="bi bi-play-circle"
                   data-value="zAGVQLHvwOY"
