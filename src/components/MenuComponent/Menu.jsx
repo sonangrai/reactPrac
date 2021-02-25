@@ -10,17 +10,17 @@ const Menu = () => {
       vid: "",
     },
     {
-      link: "/Add",
+      link: "/add",
       icon: "bi-plus",
       vid: "101",
     },
     {
-      link: "/Download",
+      link: "/download",
       icon: "bi-download",
       vid: "c55",
     },
     {
-      link: "/Share",
+      link: "/share",
       icon: "bi-box-arrow-up",
       vid: "c67",
     },

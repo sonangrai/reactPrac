@@ -12,8 +12,10 @@ function App() {
   return (
     <>
       <Router>
-        <ModelSwitch />
         <Switch>
+          <Route exact path="/">
+            <ModelSwitch />
+          </Route>
           <Route exact path="/add/:vid" component={Add} />
           <Route exact path="/download/:vid" component={Download} />
           <Route exact path="/share/:vid" component={Share} />
