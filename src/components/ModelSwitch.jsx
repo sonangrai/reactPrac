@@ -7,17 +7,13 @@ const ModelSwitch = () => {
     const location = useLocation();
 
   const background = location.state && location.state.background;
-  console.log("Location : ",location);
-  console.log("background : ",background);
 
   return (
     <div>
       <Switch location={background || location}>
-        <Route path="/" component={Home}/>
+        <Route exact path="/" component={Home}/>
       </Switch>
-
-      {/* Show the modal when a background page is set */}
-      {background && <Route path="/lbox/:vid" component={LightBoxModal} />}
+      {background && <Route exact path="/lbox/:vid" component={LightBoxModal} />}
     </div>
   );
     
